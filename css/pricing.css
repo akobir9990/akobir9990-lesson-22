@@ -7,7 +7,6 @@
 .container {
   max-width: 1280px;
   margin: 0 auto;
-  border: 1px solid red;
   padding: 10px;
 }
 
@@ -67,7 +66,6 @@ ul {
 }
 .wrapper .plan .container .plan__title {
   color: #282938;
-  border: 1px solid red;
   font-family: "Poppins-600";
   font-size: 48px;
   font-style: normal;
@@ -81,7 +79,6 @@ ul {
   font-size: 16px;
   font-style: normal;
   line-height: 28px;
-  border: 1px solid red;
 }
 .wrapper .plan .container .prices {
   display: flex;
@@ -94,7 +91,6 @@ ul {
   padding: 64px 78px 62px 48px;
   border-radius: 12px;
   background: #f4f6fc;
-  border: 1px solid red;
   transition: 0.3s;
   margin-top: 64px;
 }
