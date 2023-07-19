@@ -83,10 +83,12 @@ ul {
 .wrapper .plan .container .prices {
   display: flex;
   gap: 32px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .wrapper .plan .container .prices .item {
   position: relative;
-  width: 406px;
+  max-width: 390px;
   min-height: 745px;
   padding: 64px 78px 62px 48px;
   border-radius: 12px;
