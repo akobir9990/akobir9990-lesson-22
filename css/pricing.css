@@ -93,12 +93,9 @@ ul {
   background: #f4f6fc;
   transition: 0.3s;
   margin-top: 64px;
-}
-.wrapper .plan .container .prices .item:hover {
-  background: #1c1e53;
-}
-.wrapper .plan .container .prices .item:hover .price__heading {
-  color: white;
+  overflow: hidden;
+  background: transparent;
+  border: 1px solid black;
 }
 .wrapper .plan .container .prices .item .item__header {
   color: #282938;
@@ -156,6 +153,7 @@ ul {
   color: #a8aab0;
 }
 .wrapper .plan .container .prices .item .price__list .price__btn {
+  position: relative;
   width: 254px;
   height: 64px;
   padding: 15px 51px;
@@ -167,10 +165,86 @@ ul {
   border-radius: 41px;
   border: none;
   background: #282938;
+  left: 20px;
   margin-top: 79px;
   color: #f4f6fc;
   font-family: "Manrope-600";
   font-size: 18px;
   font-style: normal;
   line-height: 32px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.wrapper .plan .container .prices .item .price__list .price__btn:hover {
+  transform: scale(1.1);
+}
+.wrapper .plan .container .prices .item::after {
+  position: absolute;
+  content: "";
+  top: -1200px;
+  left: -389px;
+  width: 1151px;
+  height: 1151px;
+  border-radius: 1151px;
+  background: rgba(255, 255, 255, 0.06);
+  transition: 0.5s;
+}
+.wrapper .plan .container .prices .item::before {
+  position: absolute;
+  content: "";
+  top: 749px;
+  left: -389px;
+  width: 1151px;
+  height: 1151px;
+  background: #1c1e53;
+  transition: 0.3s ease-in-out;
+  z-index: -1;
+}
+.wrapper .plan .container .prices .item:hover {
+  background: #1c1e53;
+}
+.wrapper .plan .container .prices .item:hover::after {
+  top: -535px;
+}
+.wrapper .plan .container .prices .item:hover::before {
+  top: -535px;
+}
+.wrapper .plan .container .prices .item:hover .price__heading {
+  color: white;
+}
+.wrapper .plan .container .prices .item:hover .price__design {
+  color: #fcd980;
+}
+.wrapper .plan .container .prices .item:hover .item__header, .wrapper .plan .container .prices .item:hover .item__pharagraph, .wrapper .plan .container .prices .item:hover ul .list__item {
+  color: white;
+}
+.wrapper .plan .container .prices .item:hover .price__btn {
+  background: #fcd980;
+  color: #282938;
+}
+.wrapper .questions .container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 25px;
+}
+.wrapper .questions .container .questions__heading {
+  border: 1px solid red;
+}
+.wrapper .questions .container .questions__heading .question__header {
+  color: #282938;
+  font-family: "Poppins-600";
+  font-size: 48px;
+  font-style: normal;
+  line-height: 64px;
+}
+.wrapper .questions .container .questions__heading .question__pharagraph {
+  color: #2405f2;
+  text-align: center;
+  font-family: "Poppins-500";
+  font-size: 18px;
+  font-style: normal;
+  line-height: 32px;
+}
+.wrapper .questions .container .questions__list {
+  border: 1px solid red;
 }

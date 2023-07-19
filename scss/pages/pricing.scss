@@ -38,13 +38,9 @@
           background: #f4f6fc;
           transition: 0.3s;
           margin-top: 64px;
-
-          &:hover {
-            background: #1c1e53;
-          }
-          &:hover .price__heading {
-            color: white;
-          }
+          overflow: hidden;
+          background: transparent;
+          border: 1px solid black;
 
           .item__header {
             color: #282938;
@@ -105,6 +101,7 @@
               }
             }
             .price__btn {
+              position: relative;
               width: 254px;
               height: 64px;
               padding: 15px 51px;
@@ -116,16 +113,98 @@
               border-radius: 41px;
               border: none;
               background: #282938;
-              margin-top: 79px;
+              left: 20px;
 
+              margin-top: 79px;
               color: #f4f6fc;
               font-family: "Manrope-600";
               font-size: 18px;
               font-style: normal;
               line-height: 32px;
+              transition: 0.3s;
+              cursor: pointer;
+              &:hover {
+                transform: scale(1.1);
+              }
             }
           }
+          &::after {
+            position: absolute;
+            content: "";
+            top: -1200px;
+            left: -389px;
+            width: 1151px;
+            height: 1151px;
+            border-radius: 1151px;
+            background: rgba(255, 255, 255, 0.06);
+            transition: 0.5s;
+          }
+          &::before {
+            position: absolute;
+            content: "";
+            top: 749px;
+            left: -389px;
+            width: 1151px;
+            height: 1151px;
+            background: #1c1e53;
+            transition: 0.3s ease-in-out;
+            z-index: -1;
+          }
+
+          &:hover {
+            background: #1c1e53;
+          }
+          &:hover::after {
+            top: -535px;
+          }
+          &:hover::before {
+            top: -535px;
+          }
+          &:hover .price__heading {
+            color: white;
+          }
+          &:hover .price__design {
+            color: #fcd980;
+          }
+          &:hover .item__header,
+          &:hover .item__pharagraph,
+          &:hover ul .list__item {
+            color: white;
+          }
+
+          &:hover .price__btn {
+            background: #fcd980;
+            color: #282938;
+          }
         }
+      }
+    }
+  }
+  .questions {
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 25px;
+      .questions__heading {
+        border: 1px solid red;
+        .question__header {
+          color: #282938;
+          font-family: "Poppins-600";
+          font-size: 48px;
+          font-style: normal;
+          line-height: 64px;
+        }
+        .question__pharagraph {
+          color: #2405f2;
+          text-align: center;
+          font-family: "Poppins-500";
+          font-size: 18px;
+          font-style: normal;
+          line-height: 32px;
+        }
+      }
+      .questions__list {
+        border: 1px solid red;
       }
     }
   }
