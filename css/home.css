@@ -1,0 +1,404 @@
+.home {
+  background: rgb(28, 30, 83);
+}
+.home .container {
+  padding: 126px 0 128px 0;
+  display: flex;
+}
+@media (max-width: 1280px) {
+  .home .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  .home .container .home__text {
+    text-align: center;
+    width: 100%;
+  }
+  .home .container .home__text .home__bnts {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  .home .container .home__img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .home .container .home__img img {
+    width: 90%;
+  }
+}
+.home .container .home__text .home__title {
+  font-family: "Poppins-600";
+  font-size: 54px;
+  color: rgb(255, 255, 255);
+  line-height: 74px;
+}
+.home .container .home__text .home__pharapraph {
+  font-family: "Poppins-500";
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  line-height: 28px;
+  letter-spacing: 0em;
+}
+.home .container .home__text .home__bnts {
+  display: flex;
+  flex-direction: row;
+}
+.home .container .home__text .home__bnts .works__btn {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 56px 16px 56px;
+  border-radius: 41px;
+  border: none;
+  background: transparent;
+  transition: 0.3s;
+  font-family: "Manrope-600";
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: white;
+}
+.home .container .home__text .home__bnts .works__btn:hover {
+  background: rgb(252, 217, 128);
+  color: black;
+}
+.home .container .home__text .home__bnts .pricing__btn {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 56px 16px 56px;
+  border-radius: 41px;
+  border: none;
+  background: transparent;
+  transition: 0.3s;
+  font-family: "Manrope-600";
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: white;
+}
+.home .container .home__text .home__bnts .pricing__btn a {
+  color: white;
+  transition: 0.3s;
+}
+.home .container .home__text .home__bnts .pricing__btn:hover {
+  background: rgb(252, 217, 128);
+  color: black;
+}
+.home .container .home__text .home__bnts .pricing__btn:hover a {
+  color: black;
+}
+.home .container .home__text .home__bnts .pricing__btn:hover svg path {
+  fill: black;
+}
+
+.our-projects .container {
+  padding: 57px 0 128px 0;
+}
+.our-projects .container .project__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 64px;
+}
+.our-projects .container .project__title h1 {
+  font-family: "Poppins-600";
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 64px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgb(40, 41, 56);
+}
+.our-projects .container .project__title a {
+  font-family: "Poppins-500";
+  font-size: 16px;
+  color: rgb(40, 41, 56);
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.our-projects .container .project__items {
+  display: flex;
+  gap: 23px;
+}
+.our-projects .container .project__items .left .project__item {
+  position: relative;
+  width: 843px;
+  overflow: hidden;
+}
+.our-projects .container .project__items .left .project__item:hover .project__effect {
+  left: 0;
+}
+.our-projects .container .project__items .left .project__item .project__effect {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 48px 0px 48px 76px;
+  width: 50%;
+  height: 100%;
+  left: -50%;
+  background: linear-gradient(306deg, #2c1c53 0%, rgba(28, 30, 83, 0.42) 100%);
+  transition: 0.3s;
+}
+.our-projects .container .project__items .left .project__item .project__effect h2 {
+  color: #fff;
+  font-family: "Poppins-600";
+  font-size: 24px;
+  font-style: normal;
+  line-height: 36px;
+}
+.our-projects .container .project__items .left .project__item .project__effect p {
+  color: #fff;
+  font-family: "Poppins-500";
+  font-size: 16px;
+  font-style: normal;
+  line-height: 28px;
+  margin-top: 16px;
+  margin-bottom: 40px;
+}
+.our-projects .container .project__items .left .project__item .project__effect a {
+  color: #fcd980;
+  font-family: "Poppins-500";
+  font-size: 16px;
+  font-style: normal;
+  line-height: 28px;
+}
+.our-projects .container .project__items .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.our-projects .container .project__items .right .project__item {
+  position: relative;
+  overflow: hidden;
+}
+.our-projects .container .project__items .right .project__item:hover .project__effect {
+  left: 0;
+}
+.our-projects .container .project__items .right .project__item .project__effect {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 45px 56px;
+  width: 100%;
+  height: 100%;
+  left: -100%;
+  background: linear-gradient(306deg, #2c1c53 0%, rgba(28, 30, 83, 0.42) 100%);
+  transition: 0.3s;
+}
+.our-projects .container .project__items .right .project__item .project__effect h2 {
+  color: #fff;
+  font-family: "Poppins-600";
+  font-size: 24px;
+  font-style: normal;
+  line-height: 36px;
+}
+.our-projects .container .project__items .right .project__item .project__effect a {
+  color: #fcd980;
+  font-family: "Poppins-500";
+  font-size: 16px;
+  font-style: normal;
+  line-height: 28px;
+}
+@media (max-width: 1280px) {
+  .our-projects .container .project__items {
+    flex-direction: column;
+    width: 100%;
+  }
+  .our-projects .container .project__items .left {
+    width: 100%;
+  }
+  .our-projects .container .project__items .left .project__item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .our-projects .container .project__items .left .project__item .real__project {
+    width: 100%;
+  }
+  .our-projects .container .project__items .left .project__item .real__project img {
+    width: 100%;
+  }
+  .our-projects .container .project__items .right {
+    width: 100%;
+  }
+  .our-projects .container .project__items .right .project__item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .our-projects .container .project__items .right .project__item .project__effect {
+    width: 50%;
+    left: -50%;
+  }
+  .our-projects .container .project__items .right .project__item .project__effect h2 {
+    font-size: 30px;
+  }
+  .our-projects .container .project__items .right .project__itemproject__item:hover .project__effect {
+    left: 50%;
+  }
+  .our-projects .container .project__items .right .project__item .real__project {
+    width: 100%;
+  }
+  .our-projects .container .project__items .right .project__item .real__project img {
+    width: 100%;
+  }
+}
+
+.design {
+  background: #f4f6fc;
+}
+.design .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 128px 0;
+}
+.design .container .design__suptitle {
+  max-width: 419px;
+  color: #282938;
+  font-family: "Poppins-500";
+  font-size: 16px;
+  font-style: normal;
+  line-height: 28px;
+}
+.design .container .design__title {
+  max-width: 619px;
+  color: #282938;
+  font-family: "Poppins-600";
+  font-size: 48px;
+  font-style: normal;
+  line-height: 64px;
+  margin-top: 12px;
+  margin-bottom: 47px;
+}
+.design .container .design__items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px 32px;
+}
+.design .container .design__items .design__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 48px 31px 48px 48px;
+  flex-shrink: 0;
+  background: #fff;
+}
+.design .container .design__items .design__item h3 {
+  color: #282938;
+  font-family: "Poppins-500";
+  font-size: 24px;
+  font-style: normal;
+  line-height: 36px;
+}
+.design .container .design__items .design__item p {
+  color: #282938;
+  font-family: "Poppins-400";
+  font-size: 16px;
+  font-style: normal;
+  line-height: 28px;
+}
+.design .container .design__items .design__item img {
+  width: 35px;
+  height: auto;
+  margin-bottom: 25px;
+}
+@media (max-width: 1050px) {
+  .design .container .design__items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 770px) {
+  .design .container .design__items {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.clients {
+  background: rgba(244, 246, 252, 0.5);
+}
+.clients .container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 110px;
+  padding: 128px 0;
+}
+.clients .container .left h1 {
+  color: #282938;
+  font-family: "Poppins-600";
+  font-size: 38px;
+  font-style: normal;
+  line-height: 56px;
+}
+.clients .container .left p {
+  color: #282938;
+  font-family: "Poppins-400";
+  font-size: 16px;
+  font-style: normal;
+  line-height: 28px;
+}
+.clients .container .right h2 {
+  color: #282938;
+  font-family: "Poppins-500";
+  font-size: 32px;
+  font-style: normal;
+  line-height: 48px;
+}
+.clients .container .right .client__ava {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 58px;
+}
+.clients .container .right .client__ava .client__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 9px;
+}
+.clients .container .right .client__ava .client__info span p {
+  color: #282938;
+  font-style: normal;
+  margin-bottom: 0;
+}
+.clients .container .right .client__ava .client__info span p:nth-child(1) {
+  font-family: "Poppins-500";
+  font-size: 18px;
+  line-height: 32px; /* 177.778% */
+}
+.clients .container .right .client__ava .client__info span p:nth-child(2) {
+  font-family: "Poppins-500";
+  font-size: 12px;
+  line-height: 28px; /* 233.333% */
+}
+.clients .container .right .client__ava .slider {
+  display: flex;
+  gap: 10px;
+}
+.clients .container .right .client__ava .slider .slider__btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+.clients .container .right .client__ava .slider .slider__btn svg path {
+  transition: 0.3s;
+}
+.clients .container .right .client__ava .slider .slider__btn:hover svg path {
+  fill: white;
+  opacity: 1;
+}
+.clients .container .right .client__ava .slider .slider__btn:hover {
+  background: #5239fa;
+}
