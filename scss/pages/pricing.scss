@@ -195,10 +195,10 @@
           font-size: 48px;
           font-style: normal;
           line-height: 64px;
+          margin-bottom: 16px;
         }
         .question__pharagraph {
           color: #2405f2;
-          text-align: center;
           font-family: "Poppins-500";
           font-size: 18px;
           font-style: normal;
@@ -206,8 +206,64 @@
         }
       }
       .questions__list {
+        position: relative;
+        padding: 32px;
         border: 1px solid red;
+        .question__item {
+          position: relative;
+          padding: 32px;
+          .list__title {
+            color: #282938;
+            font-family: "Poppins-500";
+            font-size: 24px;
+            font-style: normal;
+            line-height: 36px;
+          }
+          .list__pharagraphP {
+            width: 624px;
+            height: 62px;
+            flex-shrink: 0;
+            color: #282938;
+            font-family: "Poppins-500";
+            font-size: 18px;
+            font-style: normal;
+            line-height: 32px;
+          }
+          .close {
+            position: absolute;
+            right: 0;
+          }
+        }
       }
     }
   }
+}
+
+.accordion-button::after {
+  background-image: url(../../images/icons/plus.svg);
+}
+.accordion-button::before {
+  background-image: url(../../images/icons/plus.svg);
+  transform: rotate(45deg);
+}
+
+.accordion-item {
+  position: relative;
+  h2 {
+    button {
+      gap: 58px;
+    }
+  }
+  .accordion-body {
+    margin-left: 80px;
+  }
+}
+
+.number__accourdion {
+  color: #2405f2;
+  text-align: center;
+  font-family: "Poppins-500";
+  font-size: 24px;
+  font-style: normal;
+  line-height: 36px;
 }

@@ -1,0 +1,185 @@
+@use "../base/reset";
+@use "../base/typography";
+
+.wrapper {
+  .home {
+    .container {
+      display: flex;
+      align-items: center;
+      padding: 128px 0;
+      gap: 48px;
+      .home__text {
+        .home__suptitle {
+          width: 419px;
+          color: #282938;
+          font-family: "Poppins-500";
+          font-size: 18px;
+          font-style: normal;
+          line-height: 32px;
+        }
+        .home__title {
+          width: 595px;
+          color: #282938;
+          font-family: "Poppins-600";
+          font-size: 54px;
+          font-style: normal;
+          line-height: 74px;
+          margin-top: 8px;
+          margin-bottom: 31px;
+        }
+        .home__subtitle {
+          width: 484px;
+          color: #282938;
+          text-align: justify;
+          font-family: "Poppins-400";
+          font-size: 16px;
+          font-style: normal;
+          line-height: 28px;
+        }
+      }
+      .home__img {
+      }
+    }
+  }
+  .focus {
+    .container {
+      padding: 128px 0;
+      .focus__text {
+        position: relative;
+        max-width: 1280px;
+        height: 376px;
+        display: flex;
+        justify-content: space-between;
+        gap: 61px;
+        padding: 96px 80px;
+        flex-shrink: 0;
+        background: #f4f5f5;
+
+        .text__left {
+          .text__left__title {
+            color: #282938;
+            font-family: "Poppins-600";
+            font-size: 38px;
+            font-style: normal;
+            line-height: 56px;
+          }
+          .text__left__subtitle {
+            color: #282938;
+            font-family: "Poppins-400";
+            font-size: 16px;
+            font-style: normal;
+            line-height: 28px;
+            margin-top: 16px;
+          }
+        }
+        .text__right {
+          .text__right__title {
+            color: #282938;
+            font-family: "Poppins-600";
+            font-size: 38px;
+            font-style: normal;
+            line-height: 56px;
+          }
+          .text__right__subtitle {
+            color: #282938;
+            font-family: "Poppins-400";
+            font-size: 16px;
+            font-style: normal;
+            line-height: 28px;
+            margin-top: 16px;
+          }
+        }
+      }
+      .focus__img {
+      }
+    }
+  }
+  .our__team {
+    background: #f4f6fc;
+    .container {
+      padding: 128px 0;
+
+      .our__team__title {
+        color: #282938;
+        text-align: center;
+        font-family: "Poppins-600";
+        font-size: 48px;
+        font-style: normal;
+        line-height: 64px;
+        margin-bottom: 48px;
+      }
+      .members {
+        width: 100%;
+        display: flex;
+        gap: 32px;
+        .member {
+          width: 296px;
+          padding: 48px 0 32px 0;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          flex-shrink: 0;
+          background: #fff;
+
+          .member__name {
+            width: 208px;
+            height: 36px;
+            flex-shrink: 0;
+            color: #1d2130;
+            text-align: center;
+            font-family: "Poppins-500";
+            font-size: 24px;
+            font-style: normal;
+            line-height: 36px;
+          }
+          .member__job {
+            color: #1d2130;
+            font-family: "Poppins-400";
+            font-size: 16px;
+            font-style: normal;
+            line-height: 28px;
+          }
+
+          .member__ava {
+            position: relative;
+            width: 168px;
+            height: 168px;
+            flex-shrink: 0;
+            border-radius: 50%;
+            overflow: hidden;
+            transition: 0.3s;
+            margin-bottom: 30px;
+            .ava {
+            }
+
+            .socials {
+              position: relative;
+              display: flex;
+              align-items: flex-end;
+              justify-content: center;
+              gap: 11px;
+              width: 168px;
+              height: 168px;
+              flex-shrink: 0;
+              padding-bottom: 32px;
+              background-image: linear-gradient(
+                348deg,
+                #5239fa 0%,
+                rgba(255, 255, 255, 0) 100%
+              );
+              transition: 0.3s;
+
+              img {
+                width: 13px;
+                height: auto;
+              }
+            }
+            &:hover .socials {
+              top: -100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

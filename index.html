@@ -15,33 +15,41 @@
   </head>
   <body>
     <div class="wrapper">
-      <!-- <nav class="nav">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container">
-          <div class="logo">
-            <img src="" alt="logo" />
-          </div>
-          <div class="nav__menu">
-            <ul class="nav__list">
-              <li class="nav__item">
-                <a class="nav__link" href="#">Home</a>
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
-              <li class="nav__item">
-                <a class="nav__link" href="#">About us</a>
+              <li class="nav-item">
+                <a class="nav-link" href="about-us.html">About us</a>
               </li>
-              <li class="nav__item">
-                <a class="nav__link" href="#">Pricing</a>
+              <li class="nav-item">
+                <a class="nav-link" href="pricing.html">Pricing</a>
               </li>
-              <li class="nav__item">
-                <a class="nav__link" href="#">Work</a>
+              <li class="nav-item">
+                <a class="nav-link" href="work.html">Work</a>
               </li>
-              <li class="nav__item">
-                <a class="nav__link" href="#">Blog</a>
+              <li class="nav-item">
+                <a class="nav-link" href="blog-page.html">Blog</a>
               </li>
             </ul>
-            <button class="nav__btn">Contact us</button>
           </div>
         </div>
-      </nav> -->
+      </nav>
       <div class="home">
         <div class="container">
           <div class="home__text">
@@ -263,35 +271,54 @@
                 </span>
               </div>
               <div class="slider">
-                <div class="slider__btn">
-                  <svg
-                    width="13"
-                    height="22"
-                    viewBox="0 0 13 22"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
+                <div id="carouselExample" class="carousel slide">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img
+                        src="https://wallpapers.net/web/wallpapers/spot-light-background-hd-wallpaper/thumbnail/lg.jpg"
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR9F4B4tHTm3AZmRZuXlmzx8JA-Y1_EObYbcXPv9jCbjbQsE33aH-c2KaSrtg_qG6nNOo&usqp=CAU"
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_YhZer3sgWNANFvoVYNjuPZpGN3WjyOXtWP1ZZkwDuswr5Gq26qJzXsC6Fx7KSx0rXlE&usqp=CAU"
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                    </div>
+                  </div>
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselExample"
+                    data-bs-slide="prev"
                   >
-                    <path
-                      opacity="0.6"
-                      d="M11.5859 -1.23626e-07L13 3.21951L3.96947 10.9106L13 18.7805L11.5859 22L9.06922e-07 11.626L1.06329e-06 9.8374L11.5859 -1.23626e-07Z"
-                      fill="#282938"
-                    />
-                  </svg>
-                </div>
-                <div class="slider__btn">
-                  <svg
-                    width="13"
-                    height="22"
-                    viewBox="0 0 13 22"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselExample"
+                    data-bs-slide="next"
                   >
-                    <path
-                      opacity="0.6"
-                      d="M1.41412 22L0 18.7805L9.03053 11.0894L0 3.21951L1.41412 0L13 10.374V12.1626L1.41412 22Z"
-                      fill="#282938"
-                    />
-                  </svg>
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
                 </div>
               </div>
             </div>
